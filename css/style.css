@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+}
+.main-wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    height: 100vh; /*dopo fare il calc*/
+}
+.flexbox {
+    flex-flow: row nowrap;
+}

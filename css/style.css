@@ -7,7 +7,7 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 header {
     width: 100%;
@@ -16,6 +16,8 @@ header {
     padding-top: 10px;
     padding-right: 10px;
     text-align: right;
+    /* position: fixed;
+    top: 0; */
 }
 header .btn {
     background-color: rgba(250, 18, 18, 0.782);
@@ -27,27 +29,32 @@ header .btn a, header .btn i {
 } 
 .main-wrap {
     width: 90%;
-    margin: 0 auto;
+    margin: 0px auto;
     max-width: 1170px;
-    height: calc(100vh - 150px)
+    height: calc(100vh - 150px);
 }
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: flex-start; */
+    align-items: flex-start;
 }
 .col-main {
     width: calc(100% / 7);
     padding-right: 3px;
+    position: relative;
 }
-.col-main img {
+.col-main > img {
     width: 100%;
+    display: block;
 }
-.col-main span {
-    
+.col-main .name {
+    position: absolute;
+    /* z-index: 300; */
+    bottom: 3px;
+    left: 0px;
 }
 footer {
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(61, 61, 61);
 }

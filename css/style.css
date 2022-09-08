@@ -3,11 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --transpgray: rgba(63, 72, 80, 0.332);
+    --deepgray: rgb(65, 65, 65);
+}
 body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 header {
     width: 100%;
@@ -20,7 +24,10 @@ header {
     top: 0; */
 }
 header .btn {
-    background-color: rgba(250, 18, 18, 0.782);
+    background-color: var(--deepgray);
+    margin-right: 2px;
+    padding: 5px;
+    border-radius: 2px;
 }
 header .btn a, header .btn i {
     color: white;
@@ -49,12 +56,26 @@ header .btn a, header .btn i {
 }
 .col-main .name {
     position: absolute;
-    /* z-index: 300; */
-    bottom: 3px;
+    bottom: 0px;
     left: 0px;
+    background-color: var(--transpgray);
+    padding: 2px;
 }
 footer {
     height: 100px;
     width: 100%;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+.foot25 {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+}
+.foot50 {
+    width: 50%;
+    height: 100%;
+    background-color: brown;
 }

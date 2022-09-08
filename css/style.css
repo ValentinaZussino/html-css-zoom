@@ -85,19 +85,27 @@ footer i {
 .foot25 {
     width: 25%;
     height: 100%;
-    background-color: aqua;
 }
 .foot50 {
     width: 50%;
     height: 100%;
     justify-content: center;
-    background-color: brown;
 }
 .foot25 div, .foot50 div {
     padding: 5px;
     line-height: 1.5;
     text-align: center;
 }
+footer .foot25:last-of-type {
+    justify-content: flex-end;
+}
 #green {
     color: rgb(75, 200, 0);
+}
+#endmeeting {
+    color: red;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    background-color: rgb(70, 70, 70);
 }

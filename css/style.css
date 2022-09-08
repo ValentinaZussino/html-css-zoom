@@ -8,12 +8,9 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-.flexbox {
-    flex-flow: row nowrap;
-}
 header {
     width: 100%;
-    height: 70px;
+    height: 50px;
     z-index: 500;
     padding-top: 10px;
     padding-right: 10px;
@@ -30,6 +27,23 @@ header .btn a, header .btn i {
 .main-wrap {
     width: 90%;
     margin: 0 auto;
+    max-width: 1170px;
     background-color: red;
-    height: 100vh; /*dopo fare il calc*/
+    height: calc(100vh - 100px)
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-main {
+    width: calc(100% / 7);
+    padding: 3px 2px;
+}
+.col-main img {
+    width: 100%;
+}
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
 }

@@ -18,10 +18,10 @@ header {
     height: 50px;
     z-index: 500;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
     text-align: right;
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
 }
 header .btn {
     background-color: var(--deepgray);
@@ -36,11 +36,11 @@ header .btn a, header .btn i {
 } 
 .main-wrap {
     width: 90%;
-    margin: 0px auto;
+    margin: 50px auto;
     max-width: 1170px;
     height: calc(100vh - 150px);
 }
-.flexbox {
+.flexwrap {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -61,18 +61,35 @@ header .btn a, header .btn i {
     background-color: var(--transpgray);
     padding: 2px;
 }
+.flexrow {
+    display: flex;
+    align-items: center;
+}
 footer {
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: rgb(34, 34, 34);
     position: fixed;
     bottom: 0;
-    display: flex;
+}
+.iconsdiv {
+    margin-left: 10px;
+}
+footer i {
+    cursor: pointer;
+    font-size: 25px;
+}
+.arrow {
+    font-size: 10px;
 }
 .foot25 {
     width: 25%;
     height: 100%;
     background-color: aqua;
+}
+.foot25 div {
+    padding: 5px;
+    line-height: 1.5;
 }
 .foot50 {
     width: 50%;

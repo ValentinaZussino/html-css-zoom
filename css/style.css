@@ -7,6 +7,7 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
 }
 header {
     width: 100%;
@@ -28,19 +29,22 @@ header .btn a, header .btn i {
     width: 90%;
     margin: 0 auto;
     max-width: 1170px;
-    background-color: red;
-    height: calc(100vh - 100px)
+    height: calc(100vh - 150px)
 }
 .flexbox {
     display: flex;
     flex-wrap: wrap;
+    /* align-items: flex-start; */
 }
 .col-main {
     width: calc(100% / 7);
-    padding: 3px 2px;
+    padding-right: 3px;
 }
 .col-main img {
     width: 100%;
+}
+.col-main span {
+    
 }
 footer {
     height: 100px;

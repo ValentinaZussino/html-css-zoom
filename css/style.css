@@ -108,4 +108,5 @@ footer .foot25:last-of-type {
     line-height: 80px;
     padding: 0 15px;
     background-color: rgb(70, 70, 70);
+    cursor: pointer;
 }

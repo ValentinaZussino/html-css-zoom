@@ -48,8 +48,9 @@ header .btn a, header .btn i {
 }
 .col-main {
     flex-basis: calc(100% / 7);
-    padding-right: 3px;
+    padding-right: 5px;
     position: relative;
+    min-width: 150px;
 }
 .col-main > img {
     width: 100%;

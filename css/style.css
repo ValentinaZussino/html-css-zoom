@@ -37,7 +37,7 @@ header .btn a, header .btn i {
 .main-wrap {
     width: 90%;
     margin: 50px auto;
-    max-width: 1170px;
+    /* max-width: 1170px; */
     height: calc(100vh - 150px);
 }
 .flexwrap {
@@ -46,13 +46,12 @@ header .btn a, header .btn i {
     align-items: flex-start;
 }
 .col-main {
-    width: calc(100% / 7);
+    flex-basis: calc(100% / 7);
     padding-right: 3px;
     position: relative;
 }
 .col-main > img {
     width: 100%;
-    display: block;
 }
 .col-main .name {
     position: absolute;
